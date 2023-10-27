@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#" onclick="toggleMenu()">Training</a></li>
+            <li><a href="#" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#" onclick="toggleMenu()">About</a></li>
+        </ul>
+    </div>
+    <section class="container">
+        <video src="production_id_4753946 (720p).mp4" class="bgVideo" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <!-- Header -->
+        <header>
+            <h1>Logo</h1>
+            <div class="toggle" onclick="toggleMenu()"></div>
+        </header>
+        <div class="textBox">
+            <h2>Be Stronger</h2>
+            <h3>Never Give Up</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur quam sequi id, eum natus temporibus assumenda excepturi distinctio, numquam aperiam officiis laudantium magni cumque voluptatem pariatur molestias ea repellat. Libero eligendi esse culpa necessitatibus ea, expedita aliquam impedit explicabo molestiae non quis! Saepe consequuntur nesciunt itaque nostrum, dolorum impedit.
+            </p>
+            <a href="#">Join Us</a>
+        </div>
+        <div class="soc">
+            <img src="Images/facebook.png" alt="">
+            <img src="Images/instagram.png" alt="">
+            <img src="Images/twitter.png" alt="">
+        </div>
+        <script>
+            function toggleMenu() {
+                const menuToggle = document.querySelector('.toggle');
+                menuToggle.classList.toggle('active');
+                const container = document.querySelector('.container');
+                container.classList.toggle('active');
+            }
+        </script>
+    </section>
+</body>
+</html>
